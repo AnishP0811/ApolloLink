@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment Details</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Appointment Details</h2>
+      <table class="table table-bordered">
+        <tbody>
+          <% appointments.forEach(appointment => { %>
+          <!-- Full Name -->
+          <tr>
+            <th scope="row">Full Name</th>
+            <td><%= appointment.fullName || "N/A" %></td>
+          </tr>
+
+          <!-- Email -->
+          <tr>
+            <th scope="row">Email</th>
+            <td><%= appointment.email || "N/A" %></td>
+          </tr>
+
+          <!-- Phone Number -->
+          <tr>
+            <th scope="row">Phone Number</th>
+            <td><%= appointment.number || "N/A" %></td>
+          </tr>
+
+          <!-- Date of Birth -->
+          <tr>
+            <th scope="row">Date of Birth</th>
+            <td>
+              <% if (appointment.dateOfBirth) { %> <%=
+              appointment.dateOfBirth.toLocaleDateString() %> <% } else { %> N/A
+              <% } %>
+            </td>
+          </tr>
+
+          <!-- Address -->
+          <tr>
+            <th scope="row">Address</th>
+            <td><%= appointment.address || "N/A" %></td>
+          </tr>
+
+          <!-- Appointment Date -->
+          <tr>
+            <th scope="row">Appointment Date</th>
+            <td>
+              <% if (appointment.appointmentDate) { %> <%=
+              appointment.appointmentDate.toLocaleDateString() %> <% } else { %>
+              N/A <% } %>
+            </td>
+          </tr>
+
+          <!-- Preferred Time -->
+          <tr>
+            <th scope="row">Preferred Time</th>
+            <td><%= appointment.preferredTime || "N/A" %></td>
+          </tr>
+
+          <!-- Preferred Doctor -->
+          <tr>
+            <th scope="row">Preferred Doctor</th>
+            <td><%= appointment.preferredDoctor || "N/A" %></td>
+          </tr>
+
+          <!-- Description -->
+          <tr>
+            <th scope="row">Description</th>
+            <td><%= appointment.description || "N/A" %></td>
+          </tr>
+
+          <!-- Add a separator between appointments -->
+          <tr>
+            <td colspan="2" style="background-color: #f8f9fa"></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+      <div class="text-center">
+        <button class="btn btn-danger" id="cancel-appointment">
+          Cancel Appointment
+        </button>
+      </div>
+    </div>
+
+    <script></script>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/navbar1.css" />
+<style>
+  .search-container {
+    position: relative;
+    display: inline-block;
+  }
+  .search-bar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 280px;
+    margin-top: 30px;
+    border: 1px #d9d9d9 solid;
+  }
+  header {
+    animation: slideInDown;
+    animation-duration: 2s;
+  }
+  .nav-fonts i {
+    color: black;
+  }
+</style>
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+  <div class="cs-top-bar">
+    <div class="cs-top-container">
+      <div class="cs-top-contact">
+        <a href="tel:+91 8069991001" class="cs-top-link">
+          <img
+            class="cs-link-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/phone-grey.svg"
+            alt="logo"
+            width="16"
+            height="16"
+            aria-hidden="true"
+            decoding="async"
+          />
+          Call us: +91 8069991001
+        </a>
+        <a href="" class="cs-top-link" style="text-decoration: none">
+          <img
+            class="cs-link-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/clock-grey.svg"
+            alt="logo"
+            width="20"
+            height="20"
+            aria-hidden="true"
+            decoding="async"
+          />
+          Opening hours: Mon - Sat: 8:00am To 9:00pm
+        </a>
+      </div>
+      <div class="cs-top-social">
+        <a href="" class="cs-social-link">
+          <img
+            class="cs-social-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/face-grey.svg"
+            alt="logo"
+            width="12"
+            height="12"
+            aria-hidden="true"
+            decoding="async"
+          />
+        </a>
+        <a href="" class="cs-social-link">
+          <img
+            class="cs-social-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twit-grey.svg"
+            alt="logo"
+            width="12"
+            height="12"
+            aria-hidden="true"
+            decoding="async"
+          />
+        </a>
+        <a href="" class="cs-social-link">
+          <img
+            class="cs-social-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/insta-grey.svg"
+            alt="logo"
+            width="12"
+            height="12"
+            aria-hidden="true"
+            decoding="async"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="cs-container">
+    <!--Nav Logo-->
+    <h3 class="lilita-one-regular cs-logo" style="color: #005ce6">
+      ApolloLink
+    </h3>
+    <!-- <a href="" class="cs-logo" aria-label="back to home">
+      <img
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Logos/consulting-logo.svg"
+        alt="logo"
+        width="197"
+        height="43"
+        aria-hidden="true"
+        decoding="async"
+      />
+    </a> -->
+    <!--Navigation List-->
+    <nav class="cs-nav" role="navigation">
+      <!--Mobile Nav Toggle-->
+      <button class="cs-toggle" aria-label="mobile menu toggle">
+        <div class="cs-box" aria-hidden="true">
+          <span class="cs-line cs-line1" aria-hidden="true"></span>
+          <span class="cs-line cs-line2" aria-hidden="true"></span>
+          <span class="cs-line cs-line3" aria-hidden="true"></span>
+        </div>
+      </button>
+      <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+      <div class="cs-ul-wrapper">
+        <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+          <li class="cs-li">
+            <a href="" class="cs-li-link cs-active"> Home </a>
+          </li>
+          <li class="cs-li">
+            <a href="/our-team" class="cs-li-link"> Our-Team </a>
+          </li>
+          <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+          <li class="cs-li cs-dropdown" tabindex="0">
+            <span class="cs-li-link">
+              Services
+              <img
+                class="cs-drop-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chev-down.svg"
+                alt="dropdown icon"
+                width="15"
+                height="15"
+                decoding="async"
+                aria-hidden="true"
+              />
+            </span>
+            <ul class="cs-drop-ul">
+              <li class="cs-drop-li">
+                <a href="/services" class="cs-li-link cs-drop-link"
+                  >Departments</a
+                >
+              </li>
+              <li class="cs-drop-li">
+                <a href="/our-team" class="cs-li-link cs-drop-link"
+                  >Meet the Experts</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="cs-li">
+            <a href="/appointments" class="cs-li-link"> Appointments </a>
+          </li>
+          <!-- <li class="cs-li">
+            <a href="" class="cs-li-link"> Contact </a>
+          </li> -->
+          <div class="nav-fonts">
+            <!-- <div class="search-container">
+              <i
+                class="fa-solid fa-magnifying-glass"
+                id="searchIcon"
+                onclick="toggleSearchBar()"
+              ></i>
+              <input
+                type="text"
+                class="form-control search-bar"
+                id="searchBar"
+                placeholder="Search..."
+              /> 
+            </div>-->
+            <a href="/notification"><i class="fa-regular fa-bell"></i></a>
+            <a href="/user-login"><i class="fa-regular fa-user"></i></a>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <!-- <a href="" class="cs-button-solid cs-nav-button">Contact Us</a> -->
+  </div>
+</header>
+<script>
+  function toggleSearchBar() {
+    var searchBar = document.getElementById("searchBar");
+    if (searchBar.style.display === "none" || searchBar.style.display === "") {
+      searchBar.style.display = "block";
+    } else {
+      searchBar.style.display = "none";
+    }
+  }
+</script>
+<script src="/js/navbar1.js"></script>

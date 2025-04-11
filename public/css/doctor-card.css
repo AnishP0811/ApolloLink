@@ -1,0 +1,181 @@
+/*-- -------------------------- -->
+<---       Meet Our Team        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  /* #meet-team-547 {
+    padding: var(--sectionPadding);
+    background-color: var(--primary);
+  } */
+  #meet-team-547 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 31rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #meet-team-547 .cs-content {
+    /* set text aling to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #meet-team-547 .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  #meet-team-547 .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+  }
+  #meet-team-547 .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #meet-team-547 .cs-topper,
+  #meet-team-547 .cs-title,
+  #meet-team-547 .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+  #meet-team-547 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 16px - 20px */
+    gap: clamp(1rem, 1vw, 1.25rem);
+  }
+  #meet-team-547 .cs-item {
+    /* changed to left at desktop */
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    max-width: 32.625rem;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bodyTextColorWhite);
+  }
+  #meet-team-547 .cs-item:hover .cs-picture img {
+    transform: scale(1.1);
+  }
+  #meet-team-547 .cs-picture {
+    width: 100%;
+    height: auto;
+    /* height divided by width, changed at desktop */
+    aspect-ratio: 1.312;
+    /* clips image tag from overflowing on hover */
+    overflow: hidden;
+    display: block;
+    position: relative;
+  }
+  #meet-team-547 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image behave like a background image */
+    object-fit: cover;
+    /* places top of the image at the top of the box */
+    object-position: top;
+    transition: transform 0.6s;
+  }
+  #meet-team-547 .cs-flex-group {
+    width: 100%;
+    /* 40px - 48px top and bottom */
+    /* 28px - 48px top and bottom */
+    padding: clamp(2.5rem, 7vw, 3rem) clamp(1.75rem, 7vw, 3rem);
+    /* prevents padding from affect height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #meet-team-547 .cs-name {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    text-align: inherit;
+    margin: 0 0 0.5rem 0;
+    color: var(--headerColor);
+    display: block;
+  }
+  #meet-team-547 .cs-desc {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.5em;
+    font-weight: 400;
+    text-align: inherit;
+    margin: 0 0 1.25rem 0;
+    color: var(--bodyTextColor);
+    display: block;
+  }
+  #meet-team-547 .cs-link {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    text-align: center;
+    text-decoration: none;
+    /* 40px - 48px */
+    line-height: clamp(2.5rem, 4vw, 3rem);
+    min-width: 7.25rem;
+    /* 40px - 48px */
+    height: clamp(2.5rem, 4vw, 3rem);
+    padding: 0 1.5rem;
+    /* prevents padding from adding to height and width */
+    box-sizing: border-box;
+    border-radius: 1.875rem;
+    background-color: #dad9e3;
+    color: var(--headerColor);
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  #meet-team-547 .cs-link:hover {
+    background-color: var(--primary);
+    color: var(--bodyTextColorWhite);
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #meet-team-547 .cs-container {
+    max-width: 80rem;
+  }
+  #meet-team-547 .cs-card-group {
+    flex-direction: row;
+  }
+  #meet-team-547 .cs-picture {
+    /* width divided by height */
+    aspect-ratio: 1.11621622;
+  }
+  #meet-team-547 .cs-flex-group {
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,91 @@
+<link rel="stylesheet" href="/css/ba-btn.css" />
+<style>
+  /* Hero Page CSS properties */
+  .Hero-page {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25vh 0 8vh 0;
+  }
+  .Hero-page .heading {
+    margin: 0 10vh;
+  }
+  .Hero-page .heading h1 {
+    color: #4361ee;
+    animation: fadeInDown;
+    animation-duration: 2s;
+  }
+
+  .Hero-page .heading h4 {
+    animation: fadeInUp;
+    animation-duration: 2s;
+  }
+  .learn-more {
+    animation: fadeInLeftBig;
+    animation-duration: 2s;
+  }
+  .Hero-page .avtar {
+    margin: 0 5vh;
+  }
+  .Hero-page .avtar img {
+    max-width: 100%;
+    max-height: 65vh;
+    display: block;
+    animation: slideInRight;
+    animation-duration: 2s;
+  }
+  @media (max-width: 768px) {
+    .Hero-page {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 1094px) {
+    .heading h1 {
+      font-size: 30px;
+    }
+    .heading h4 {
+      font-size: 20px;
+    }
+    @media (max-width: 534px) {
+      .heading h1 {
+        font-size: 25px;
+      }
+      .heading h4 {
+        font-size: 15px;
+      }
+    }
+  }
+</style>
+
+<!-- This is banner component -->
+<div class="Hero-page">
+  <!-- This is Heading div  -->
+  <div class="heading">
+    <h1 class="coiny-regular">Your Health, Our Priority!</h1>
+    <h4 style="font-weight: 700">
+      Where expert care meets heartfelt compassion,<br />combining advanced
+      treatments to create a <span style="color: #c200fb">better future</span>
+      <br />for
+      <span style="color: #ff0054">you and your loved ones :)</span>
+    </h4>
+
+    <!-- Book Appointment button -->
+    <button class="learn-more">
+      <span class="circle" aria-hidden="true">
+        <span class="icon arrow"></span>
+      </span>
+      <span class="button-text"
+        ><a href="/app-form">Book an Appointment</a></span
+      >
+    </button>
+  </div>
+
+  <!-- This is Avtar div  -->
+  <div class="avtar">
+    <img src="/images/Avtar.png" alt="image" />
+    <!-- <img src="doc-avtar.png" alt="Doc-Image" /> -->
+  </div>
+</div>

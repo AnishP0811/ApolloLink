@@ -1,0 +1,120 @@
+/* General Styles */
+section {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+/* Section Title */
+.testimonials {
+  padding: 50px 20px;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.testimonials p {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 40px;
+}
+
+/* Testimonials Container */
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Single Testimonial */
+.testimonial {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  transition: 1s all;
+}
+
+.testimonial:hover {
+  transform: scale(1.05); /* Slightly increase the size */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Add a deeper shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition */
+}
+
+.quote-icon {
+  font-size: 2.5rem;
+  color: #c1c9f5;
+  position: absolute;
+  top: 0px;
+  left: 5px;
+}
+
+/* User Info */
+.user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Rating */
+.rating {
+  color: #ffc107;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+  font-size: 1rem;
+  font-style: italic;
+  color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonials-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial {
+    width: 90%;
+  }
+
+  .testimonials h2 {
+    font-size: 1.8rem;
+  }
+
+  .testimonials p {
+    font-size: 1rem;
+  }
+}

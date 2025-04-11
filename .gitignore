@@ -1,0 +1,41 @@
+# Clear existing .gitignore (if needed) and create a comprehensive one
+echo "" > .gitignore  # This clears the file (optional)
+echo "# Dependency directories" >> .gitignore
+echo "node_modules/" >> .gitignore
+echo ".pnpm-store/" >> .gitignore
+echo "jspm_packages/" >> .gitignore
+
+echo "\n# Environment files" >> .gitignore
+echo ".env" >> .gitignore
+echo ".env*.local" >> .gitignore
+
+echo "\n# Log files" >> .gitignore
+echo "npm-debug.log*" >> .gitignore
+echo "yarn-debug.log*" >> .gitignore
+echo "yarn-error.log*" >> .gitignore
+
+echo "\n# Build directories" >> .gitignore
+echo "dist/" >> .gitignore
+echo "build/" >> .gitignore
+
+echo "\n# Database" >> .gitignore
+echo "data/" >> .gitignore
+echo "*.db" >> .gitignore
+echo "*.sqlite" >> .gitignore
+
+echo "\n# IDE/Editor" >> .gitignore
+echo ".vscode/" >> .gitignore
+echo ".idea/" >> .gitignore
+echo "*.suo" >> .gitignore
+echo "*.ntvs*" >> .gitignore
+echo "*.njsproj" >> .gitignore
+echo "*.sln" >> .gitignore
+
+echo "\n# OS generated files" >> .gitignore
+echo ".DS_Store" >> .gitignore
+echo ".DS_Store?" >> .gitignore
+echo "._*" >> .gitignore
+echo ".Spotlight-V100" >> .gitignore
+echo ".Trashes" >> .gitignore
+echo "ehthumbs.db" >> .gitignore
+echo "Thumbs.db" >> .gitignore

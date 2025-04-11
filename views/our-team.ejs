@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/our-team.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ============================================ -->
+    <!--                    Team                      -->
+    <!-- ============================================ -->
+
+    <section id="meet-team-2071">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Our Team</span>
+          <h2 class="cs-title">Meet Our Team</h2>
+          <p class="cs-text">
+            "At Apollo Hospitals, our team comprises world-class doctors,
+            compassionate nurses, and dedicated healthcare professionals
+            committed to excellence. With cutting-edge expertise and
+            patient-centric care, we work together to deliver hope, healing, and
+            healthier tomorrows."
+          </p>
+        </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <span class="cs-name">Dr. A K Bardan</span>
+            <div class="cs-flex">
+              <span class="cs-job">Cardiologist</span>
+              <span class="cs-department">MBBS, MD, Dip. Cardiology</span>
+            </div>
+          </li>
+          <li class="cs-item">
+            <span class="cs-name">Dr Abhidha Shah</span>
+            <div class="cs-flex">
+              <span class="cs-job">Neurologist</span>
+              <span class="cs-department">MBBS, MS, MCh(Neurology)</span>
+            </div>
+          </li>
+          <li class="cs-item">
+            <span class="cs-name">Dr A Goutham Rao</span>
+            <div class="cs-flex">
+              <span class="cs-job">Medical Oncolgy</span>
+              <span class="cs-department"
+                >MBBS, MD,ECMO,DrNB MEDICAL ONCOLOGY</span
+              >
+            </div>
+          </li>
+          <li class="cs-item">
+            <span class="cs-name">Dr Neel Shah</span>
+            <div class="cs-flex">
+              <span class="cs-job">General Surgeon</span>
+              <span class="cs-department">MBBS, DNB, FRCS</span>
+            </div>
+          </li>
+          <li class="cs-item">
+            <span class="cs-name">Dr Anilasree Atluri</span>
+            <div class="cs-flex">
+              <span class="cs-job">Gynecologist</span>
+              <span class="cs-department">M.S(OBG), MRCOG; FMAS;DMAS</span>
+            </div>
+          </li>
+          <li class="cs-item">
+            <span class="cs-name">Dr Anup Dhir</span>
+            <div class="cs-flex">
+              <span class="cs-job">Plastic Surgeon</span>
+              <span class="cs-department">MBBS, MS, MCh, MD</span>
+            </div>
+          </li>
+          <li class="cs-item">
+            <span class="cs-name">Dr Abhishek Pimpralekar</span>
+            <div class="cs-flex">
+              <span class="cs-job">Medicine Physician</span>
+              <span class="cs-department">MBBS,MD(Internal Medicine)</span>
+            </div>
+          </li>
+          <li class="cs-item">
+            <span class="cs-name">Dr Amit Ghose</span>
+            <div class="cs-flex">
+              <span class="cs-job">Urologist</span>
+              <span class="cs-department"
+                >MBBS (Cal), MS (Cal), FRCS (Edin), Dip in Urology (UK)</span
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+      <picture class="cs-background">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dentist-staff.jpeg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dentist-staff.jpeg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dentist-staff.jpeg"
+          alt="dentist staff"
+          width="1024"
+          height="894"
+        />
+      </picture>
+    </section>
+    <%- include('doctor-card') %>
+
+    <!-- Row 2 -->
+    <%- include('doctor-card') %>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!-- Non-Usable Navbar!!!  -->
+<!--                       -->
+
+<style>
+  /* Navbar CSS Properties */
+  nav {
+    width: auto;
+    animation: slideInDown;
+    animation-duration: 0.5s;
+  }
+  .nav-item a {
+    color: black;
+  }
+  .collapse ul {
+    margin: 0 auto;
+  }
+  .collapse ul li {
+    margin: 0 10px;
+  }
+  .nav-link:hover {
+    color: blue;
+  }
+  nav .contact {
+    font-weight: bold;
+    margin: 0 15px;
+  }
+
+  nav .contact a {
+    background: #005ce6;
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+  nav .contact a i {
+    margin-right: 8px; /* Space between icon and number */
+    font-size: 16px; /* Adjust icon size */
+  }
+
+  .d-flex {
+    margin: 0 auto;
+  }
+  .container-fluid .d-flex i {
+    font-size: 30px;
+    margin: 0 20px 0 0;
+    color: green;
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <h3 class="lilita-one-regular" style="color: #005ce6">ApolloLink</h3>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link active text-light bg-dark"
+            aria-current="page"
+            href=""
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/services">Services</a>
+        </li>
+        <!-- <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">Contact Us</a>
+            </li> -->
+
+        <!-- Dropdown menu of navbar  -->
+
+        <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Us</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Departments</a></li>
+                <li><a class="dropdown-item" href="#">Doctors</a></li>
+                <li><a class="dropdown-item" href="#">Reviews</a></li>
+              </ul>
+            </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="/our-team">Our team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/appointments">Appointments</a>
+        </li>
+      </ul>
+    </div>
+    <div class="contact">
+      <a href="tel:+91 8069991001"
+        ><i class="fa-solid fa-phone"></i>+91 8069991001</a
+      >
+    </div>
+    <form class="d-flex" role="search">
+      <input
+        class="form-control me-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <i class="bi bi-person-circle"></i>
+    </form>
+  </div>
+</nav>
